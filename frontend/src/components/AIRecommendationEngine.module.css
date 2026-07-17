@@ -1,0 +1,154 @@
+.aiContainer {
+  margin-top: 32px;
+  background: linear-gradient(to right, #ffffff, #f8fafc);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.aiIcon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(23, 78, 50, 0.25);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.pulseIndicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-color);
+  background: rgba(46, 139, 87, 0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.pulseDot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(46, 139, 87, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(46, 139, 87, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(46, 139, 87, 0);
+  }
+}
+
+.recommendationList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.recommendationItem {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.04);
+  transition: all 0.2s ease;
+}
+
+.recommendationItem:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: rgba(23, 78, 50, 0.1);
+}
+
+.recIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.recContent {
+  flex: 1;
+}
+
+.recHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.recTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.priorityBadge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.recBody {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.recBody p {
+  margin: 0 0 4px 0;
+}
+
+.recBody strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.benefitText {
+  color: var(--success-color);
+  font-weight: 500;
+}

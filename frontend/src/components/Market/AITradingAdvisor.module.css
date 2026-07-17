@@ -1,0 +1,144 @@
+.advisorCard {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.03);
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+.aiBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #174E32;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.aiIcon {
+  color: #10B981;
+}
+
+.actionBadge {
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.badgeHold {
+  background: rgba(245, 158, 11, 0.15);
+  color: #D97706;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.badgeSell {
+  background: rgba(239, 68, 68, 0.15);
+  color: #DC2626;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.badgeStable {
+  background: rgba(16, 185, 129, 0.15);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.mainContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reason {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #374151;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.metricsBox {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 1.5rem;
+  background: #F9FAFB;
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.divider {
+  background-color: rgba(0,0,0,0.05);
+  width: 1px;
+  height: 100%;
+}
+
+.metricLabel {
+  font-size: 0.85rem;
+  color: #6B7280;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.metricValue {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.textGreen {
+  color: #059669;
+}
+
+.textRed {
+  color: #DC2626;
+}
+
+.confidenceRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.targetIcon {
+  color: #8B5CF6;
+}
+
+.confidenceValue {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.footer {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #9CA3AF;
+  font-weight: 500;
+}

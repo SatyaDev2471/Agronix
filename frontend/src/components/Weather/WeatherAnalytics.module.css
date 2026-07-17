@@ -1,0 +1,14 @@
+.analyticsCard {
+  padding: 24px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.chartContainer {
+  height: 300px;
+  width: 100%;
+}

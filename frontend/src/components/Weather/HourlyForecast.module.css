@@ -1,0 +1,80 @@
+.hourlyCard {
+  padding: 24px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.scrollContainer {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding-bottom: 12px;
+  /* Hide scrollbar for clean look but allow scrolling */
+  scrollbar-width: thin;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.hourItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+  padding: 16px 12px;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 1px solid rgba(0,0,0,0.03);
+  transition: all 0.2s ease;
+}
+
+.hourItem:hover {
+  background: white;
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-sm);
+  border-color: rgba(23, 78, 50, 0.1);
+}
+
+.time {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.iconWrapper {
+  margin-bottom: 8px;
+}
+
+.temp {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.popWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #3b82f6;
+  font-weight: 600;
+  background: #eff6ff;
+  padding: 4px 8px;
+  border-radius: 12px;
+}

@@ -1,0 +1,83 @@
+.nutrientCard {
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.phBadge {
+  background: #f1f5f9;
+  color: #334155;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 12px;
+}
+
+.npkGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.npkStat {
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.npkLabel {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.npkValue {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.unit {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.chartContainer {
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+.aiText {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+  padding: 12px;
+  background: linear-gradient(to right, #fefce8, #fef9c3);
+  border-left: 3px solid #eab308;
+  border-radius: 8px;
+}
+
+.aiText strong {
+  color: #a16207;
+}

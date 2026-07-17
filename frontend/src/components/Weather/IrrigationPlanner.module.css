@@ -1,0 +1,143 @@
+.plannerCard {
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.iconWrapper {
+  width: 36px;
+  height: 36px;
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--success-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.planOverview {
+  margin-bottom: 20px;
+}
+
+.planStatus {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: #f8fafc;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.timingSection {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.timingItem {
+  flex: 1;
+  background: white;
+  border: 1px solid rgba(0,0,0,0.05);
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+}
+
+.timingLabel {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.timingValue {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.timingValue.success {
+  color: var(--success-color);
+}
+
+.timingValue.danger {
+  color: var(--danger-color);
+}
+
+.recommendationBox {
+  background: var(--background-color);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.recRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.recRow:last-child {
+  margin-bottom: 0;
+}
+
+.recLabel {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.recValue {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.recValue.highlight {
+  color: #3b82f6;
+  background: #eff6ff;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.aiExplanation {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  background: linear-gradient(to right, #fefce8, #fef9c3);
+  padding: 16px;
+  border-radius: 12px;
+  border-left: 4px solid #eab308;
+}
+
+.aiExplanation p {
+  margin: 0;
+}
+
+.aiExplanation strong {
+  color: #854d0e;
+}
+
+.aiIcon {
+  color: #ca8a04;
+  flex-shrink: 0;
+  margin-top: 2px;
+}

@@ -1,0 +1,90 @@
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.kpiCard {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.kpiTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.kpiMain {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.kpiValue {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.kpiUnit {
+  font-size: 16px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-left: 2px;
+}
+
+.trendBadge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.trendPositive {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.trendNegative {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.trendNeutral {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.kpiFooter {
+  border-top: 1px solid rgba(0,0,0,0.04);
+  padding-top: 12px;
+}
+
+.prevText {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .kpiGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .kpiGrid {
+    grid-template-columns: 1fr;
+  }
+}
