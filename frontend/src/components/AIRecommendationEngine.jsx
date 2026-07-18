@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../services/api';
 import { Spinner } from 'react-bootstrap';
 import { FiCpu, FiAlertTriangle, FiCheckCircle, FiInfo } from 'react-icons/fi';
 import styles from './AIRecommendationEngine.module.css';
@@ -13,7 +13,7 @@ const AIRecommendationEngine = () => {
   useEffect(() => {
     const fetchRecommendations = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/analytics?results=1&language=${language}`);
+        const response = await api.get(`/analytics?results=1&language=${language}`);
         if (response.data && response.data.success && response.data.analytics?.recommendations) {
           setRecommendations(response.data.analytics.recommendations);
         }

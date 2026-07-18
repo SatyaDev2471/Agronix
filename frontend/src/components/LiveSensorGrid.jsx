@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col, Spinner } from 'react-bootstrap';
-import axios from 'axios';
+import api from '../services/api';
 import { WiHumidity, WiThermometer, WiRaindrop } from 'react-icons/wi';
 import { GiWaterDrop, GiPlantRoots, GiRaining } from 'react-icons/gi';
 import { TbActivityHeartbeat } from 'react-icons/tb';
@@ -41,7 +41,7 @@ const LiveSensorGrid = () => {
   useEffect(() => {
     const fetchLiveData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/analytics?results=2');
+        const response = await api.get('/analytics?results=2');
         if (response.data && response.data.success) {
           const feeds = response.data.analytics?.rawFeeds || [];
           if (feeds.length > 0) {

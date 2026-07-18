@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FiMessageSquare, FiX, FiSend, FiCpu } from 'react-icons/fi';
-import axios from 'axios';
+import api from '../services/api';
 import { useLanguage } from '../contexts/LanguageContext';
 import styles from './FloatingChatbot.module.css';
 
@@ -49,7 +49,7 @@ const FloatingChatbot = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/ai/chat', {
+      const response = await api.post('/ai/chat', {
         message: userMsg,
         language: language
       });

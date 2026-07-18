@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from './AIAssistant.module.css';
 import { useLanguage } from '../../contexts/LanguageContext';
-import axios from 'axios';
+import api from '../../services/api';
 
 const formatMessage = (text) => {
   // Simple markdown parser for **bold** and newlines
@@ -51,7 +51,7 @@ const AIAssistant = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/ai/chat', {
+      const response = await api.post('/ai/chat', {
         message: userMsg,
         language: language // Pass the current language context to the RAG backend
       });

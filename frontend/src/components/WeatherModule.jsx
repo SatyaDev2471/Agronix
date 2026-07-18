@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../services/api';
 import { Row, Col, Spinner } from 'react-bootstrap';
 import { WiDaySunny, WiCloudy, WiRain, WiStrongWind, WiSunrise, WiSunset, WiSnow, WiThunderstorm, WiDayFog } from 'react-icons/wi';
 import styles from './WeatherModule.module.css';
@@ -23,7 +23,7 @@ const WeatherModule = () => {
   useEffect(() => {
     const fetchWeather = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/weather');
+        const response = await api.get('/weather');
         setWeatherData(response.data);
       } catch (err) {
         console.error("Error fetching weather:", err);

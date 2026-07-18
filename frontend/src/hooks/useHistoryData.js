@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+import api from '../services/api';
 
 export const useHistoryData = (results = 800) => {
   const [data, setData] = useState(null);
@@ -11,7 +11,7 @@ export const useHistoryData = (results = 800) => {
       try {
         setLoading(true);
         // We use the analytics endpoint which already fetches and parses ThingSpeak feeds
-        const response = await axios.get(`http://localhost:5000/api/analytics?results=${results}`);
+        const response = await api.get(`/analytics?results=${results}`);
         
         if (response.data && response.data.success) {
           setData(response.data);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FiBell, FiSearch, FiUser } from 'react-icons/fi';
-import axios from 'axios';
+import api from '../services/api';
 import { useLanguage } from '../contexts/LanguageContext';
 import styles from './Topbar.module.css';
 
@@ -11,7 +11,7 @@ const Topbar = () => {
   useEffect(() => {
     const checkMotorStatus = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/analytics?results=1');
+        const response = await api.get('/analytics?results=1');
         if (response.data && response.data.success) {
           const latestFeed = response.data.analytics?.rawFeeds?.[0];
           if (latestFeed) {
